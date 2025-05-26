@@ -37,6 +37,25 @@ body {
       height: 80px;
     }
 
+    .bird_up{
+        width: 70px;
+        transform: rotate(30deg);
+        opacity: 0.5;
+        position: absolute;
+        bottom: 0px;
+        right: 30px;
+    }
+
+
+    .bird_up2{
+        width: 70px;
+        transform: rotate(-30deg);
+        opacity: 0.5;
+        position: absolute;
+        bottom: 0px;
+        left: 30px;
+    }
+
     .music-btn-wrapper img {
       width: 100%;
       height: auto;
@@ -85,11 +104,13 @@ h1{
     font-size: 48px;
     margin: 0;
     text-align: center;
-    width: 80%;
     font-family: "Literata", serif;
     color: #510000;
     letter-spacing: 2px;
-    line-height: 40px
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 h2 {
@@ -102,6 +123,29 @@ h2 {
   letter-spacing: 2px;
 }
 
+.ornament50{
+    position: absolute;
+  top: 60%;
+  left: calc(5vw - 120px);
+  transform: translate(-50%, -50%); /* центрирует по оси X и Y */
+  width: 100%;
+  opacity: 0.1;
+  z-index: -1;
+  transform-origin: center;
+  pointer-events: none; 
+}
+
+.ornament51{
+    position: absolute;
+  top: 60%;
+  right: calc(-95vw - 120px);
+  transform: translate(-50%, -50%) rotate(180deg); /* центрирует по оси X и Y */
+  width: 100%;
+  opacity: 0.1;
+  z-index: -1;
+  transform-origin: center;
+  pointer-events: none; 
+}
 
 .ornament {
   position: absolute;
