@@ -218,11 +218,11 @@ h3{
 .ornament2 {
   position: absolute;
   top: -20%;
-  transform: translateX(-50%);
   width: 100%;
   animation: spin 30s linear infinite;
   opacity: 0.5;
   z-index: -1;
+  transform-origin: center;
 }
 
 .text{
@@ -488,4 +488,13 @@ form{
 
     .toi{
         width: 100%;
+    }
+
+    .hidden {
+      display: none;
+    }
+    #message {
+      margin-top: 20px;
+      color: #510000;
+      font-weight: bold;
     }
