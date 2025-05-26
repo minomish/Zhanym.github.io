@@ -1,0 +1,491 @@
+body {
+      margin: 0;
+      padding: 0;
+        background-color: #fef9f9;
+    font-family: "Literata", serif;
+    font-weight: 200;
+    color: #510000;
+
+    overflow-x: hidden;
+    }
+
+    .image-wrapper {
+      position: relative;
+      width: 100vw;
+      max-width: 100%;
+    }
+
+    .bg-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .music-btn-wrapper {
+      position: absolute;
+      top: 60%;
+      left: 90%; 
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      width: 80px;
+      height: 80px;
+    }
+
+    .music-btn-wrapper img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .music-btn-wrapper {
+        width: 45px;
+        height: 45px;
+        left: 88%; 
+      }
+    }
+
+    .div_btn {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn_up {
+  background-color: #510000;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.btn_up:hover {
+  background-color: #a94242;
+  transform: scale(1.03);
+}
+
+
+
+h1{
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+    width: 80%;
+    font-family: "Literata", serif;
+    color: #510000;
+    letter-spacing: 2px;
+    line-height: 40px
+}
+
+h2 {
+  font-size: 28px;
+  margin: 0;
+  text-align: center;
+  font-family: "Literata", serif;
+  font-weight: 400;
+  color: #510000;
+  letter-spacing: 2px;
+}
+
+
+.ornament {
+  position: absolute;
+  top: -350px;
+  right: -230px;
+  width: 130%;
+  animation: spin 30s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.img_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_box-item {
+    width: 120%;
+    margin-top: 8px;
+}
+
+.img_box-item:first-child{
+    margin-top: 30px;
+}
+
+
+
+
+
+.btn_up:active {
+  transform: scale(0.98);
+}
+
+.img_up {
+  width: 90px; /* делаем компактнее, можно изменить */
+  animation: floatUpDown 2s ease-in-out infinite;
+  filter: sepia(100%) saturate(600%) hue-rotate(-50deg) brightness(32%);
+}
+
+/* Анимация вверх-вниз */
+@keyframes floatUpDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.g_orn{
+    width: 100%;
+    filter: sepia(100%) saturate(600%) hue-rotate(-50deg) brightness(32%);
+    opacity: 0.3;
+}
+
+
+
+h3{
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    font-family: Literata, serif;
+    font-weight: 400;
+    color: #510000;
+    line-height: 40px;
+}
+
+.p-main{
+    font-size: 18px;
+    text-align: center;
+    font-family: "Literata";
+    font-weight: 300;
+    margin: 25px;
+}
+
+.main_img_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img_animal{
+    width: 100px;
+    opacity: 0.5;
+    filter: sepia(100%) saturate(600%) hue-rotate(-50deg) brightness(32%);
+}
+
+
+
+.calendar {
+  position: relative;
+  overflow: visible;
+  margin-top: 85px;
+  position: relative;
+  z-index: 3;
+  background-color: #510000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.ornament2 {
+  position: absolute;
+  top: -20%;
+  transform: translateX(-50%);
+  width: 100%;
+  animation: spin 30s linear infinite;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.text{
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Literata";
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 50px 0 10px 0 ;
+}
+
+.text2{
+    text-align: center;
+    color: #510000;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Literata";
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 50px 0 10px 0 ;
+}
+
+.text_data{
+    margin: 0;
+    text-align: center;
+    line-height: 35px;
+    font-size: 25px;
+    font-family: "Literata";
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.calendar_img_wrapper {
+  position: relative;
+  width: 85%;
+  margin-top: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+    background: linear-gradient(to bottom, #ffeeee, rgba(255, 255, 255, 0));
+}
+
+.calendar_img_wrapper::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; 
+  border-radius: 30px;
+  background: linear-gradient(to bottom, rgb(252, 253, 241), rgba(255, 255, 255, 0));
+  z-index: 2;
+  pointer-events: none;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* .calendar_img_wrapper::before {
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 24%; 
+  border-radius: 20px;
+  background-color: rgb(252, 253, 241);
+  z-index: 2;
+  pointer-events: none;
+} */
+
+.calendar_img {
+  width: 100%;
+  display: block;
+  background-color: #ffffff;
+  opacity: 0.5;
+  position: relative;
+  z-index: 3;
+  border-radius: 30px;
+}
+
+.heard_img{
+    width: 100%;
+}
+
+.text_1{
+    color: #510000;
+    font-family: "Literata";
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: 15px 0;
+    letter-spacing: 4px;
+}
+
+.text_111{
+    color: #ffffff;
+    font-family: "Literata";
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: 15px 0;
+    letter-spacing: 4px;
+}
+
+.text_2{
+    color: #284450;
+    /* color: #510000; */
+    font-family: "Literata";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+.oi-img{
+    margin: 20px 0 5px 0;
+    width: 100%;
+    filter: invert(100%) brightness(200%);
+}
+
+
+
+.ornament3{
+    width: 100%;
+    animation: spin 30s linear infinite;
+    opacity: 0.5;
+    position: absolute;
+    bottom: -180px;
+    z-index: 1; 
+}
+
+.schedule{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 60px;
+  background-color: black;
+  
+}
+
+
+.bird{
+    width: 70px;
+    transform: rotate(30deg);
+    opacity: 0.5;
+    position: absolute;
+    bottom: 270px;
+    right: 30px;
+}
+
+.bird2{
+    width: 70px;
+    transform: rotate(-30deg);
+    opacity: 0.5;
+    position: absolute;
+    bottom: -85px;
+    left: -50px;
+}
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text{
+    color: #510000;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.form_input{
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.ratioDiv{
+    width: 100%;
+}
+
+.form-radio{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.form-radio input[type="radio"] {
+  accent-color: #510000;
+}
+
+.btn_centered {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.btn_submit{
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #510000;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table{
+  padding: 16px;      
+  border-radius: 40px;
+  background-color: #fef9f9;
+  margin: 15px;
+}
+
+    table {
+      border-collapse: collapse;
+      text-align: center;
+      font-size: 18px;
+      color: #510000;
+    }
+    th, td {
+      width: 50px;
+      height: 35px;
+      position: relative;
+    }
+    .heart {
+      position: absolute;
+      top: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 45px;
+      height: 45px;
+      animation: pulse 1.5s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes pulse {
+      0% { transform: translateX(-50%) scale(1); }
+      50% { transform: translateX(-50%) scale(1.1); }
+      100% { transform: translateX(-50%) scale(1); }
+    }
+
+    .toi{
+        width: 100%;
+    }
